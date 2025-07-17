@@ -54,8 +54,8 @@ mcp-server/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/mcp-server.git
-cd mcp-server
+git clone https://github.com/ruparam88/MCP-server.git
+cd MCP-server
 ```
 
 ### 2. Create virtual environment (recommended)
