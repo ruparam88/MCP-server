@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query
 from app.model_loader import load_model
 from app.database import load_database
-from app.comparator import get_top_matches
+from app.comparator import get_top_matches 
 
 router = APIRouter()
 

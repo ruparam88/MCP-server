@@ -21,4 +21,18 @@ def get_top_matches(model, df, query, top_k=5):
             "url": f"http://127.0.0.1:8000/product/{row['name'].replace(' ', '_')}"
         })
 
-    return results
+    return results[:top_k]
+
+
+
+
+# from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.metrics.pairwise import cosine_similarity
+
+# def filter_top_matches(query, df, top_k=5):
+#     vectorizer = TfidfVectorizer()
+#     uses = df['uses'].fillna("").tolist()
+#     tfidf_matrix = vectorizer.fit_transform(uses + [query])
+#     similarities = cosine_similarity(tfidf_matrix[-1], tfidf_matrix[:-1])[0]
+#     top_indices = similarities.argsort()[::-1][:top_k]
+#     return df.iloc[top_indices]
