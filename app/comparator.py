@@ -25,6 +25,7 @@ def get_top_matches(model, df, query, top_k=5):
 
 
 
+#OR
 
 # from sklearn.feature_extraction.text import TfidfVectorizer
 # from sklearn.metrics.pairwise import cosine_similarity
